@@ -46,7 +46,14 @@ describe(
         it('should return the string "Hello, Pat!" when executed',function(){
             expect(sayHello("Pat")).toBe("Hello, Pat!");
         });
-        it("should never return 'undefined' when called", function() {
-            expect(sayHello()).not.toBe(undefined);
+        it('should return the string "Hello, World!" when passed true boolean',function(){
+            expect(sayHello(true)).toBe("Hello, World!");
         });
+        it('should return the string "Hello, World!" when passed false boolean',function(){
+            expect(sayHello(false)).toBe("Hello, World!");
+        });
+        it("should return 'Hello, World, World!' when input is undefined", function() {
+            expect(sayHello()).toBe("Hello, World!");
+        });
+
     });
