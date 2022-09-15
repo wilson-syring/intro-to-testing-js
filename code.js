@@ -2,6 +2,14 @@
 function helloWorld() {
     return "Hello, World!";
 }
-function sayHello(){
-    return  "Hello";
+let sayHello = function(input){
+    return "Hello, " + input + "!";
 }
+//     if(input === "Alex"){
+//         return "Hello, Alex!";
+//     }else if(input === "Pat"){
+//         return "Hello, Pat!";
+//     }else {
+//         return "Hello, Jane!";
+//     }
+// }
