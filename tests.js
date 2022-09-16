@@ -73,3 +73,39 @@ describe(
             expect(typeof isFive("5")).toBe("boolean");
         });
     });
+//unit test for the isEven function
+describe(
+    'isEven', function() {
+        it('should be a defined function', function () {
+            expect(typeof isEven).toBe('function');
+        });
+        it('should return a boolean for every input', function () {
+            expect(typeof isEven()).toBe("boolean")
+        });
+        it('should return the boolean true when passed the number 2',function(){
+            expect(typeof isEven(2)).toBe("boolean");
+        });
+        it('should return a boolean false when passed the string "banana" ',function(){
+            expect(typeof isEven("banana")).toBe("boolean");
+        });
+        it('should return the boolean true when passed the number -4',function(){
+            expect(typeof isEven(-4)).toBe("boolean");
+        });
+        it('should return the boolean false when passed the number 3',function(){
+            expect(typeof isEven(-4)).toBe("boolean");
+        });
+        it('should return the boolean true when passed the number 8',function(){
+            expect(typeof isEven(8)).toBe("boolean");
+        });
+        it('should return the boolean false when passed the number Infinity',function(){
+            expect(typeof isEven(Infinity)).toBe("boolean");
+        });
+        it('should return the boolean false when passed the boolean false',function(){
+            expect(typeof isEven(false)).toBe("boolean");
+        });
+        it('should return the boolean false when passed the boolean true',function(){
+            expect(typeof isEven(true)).toBe("boolean");
+        });it('should return the boolean false when when argument is left empty',function(){
+            expect(typeof isEven()).toBe("boolean");
+        });
+    });

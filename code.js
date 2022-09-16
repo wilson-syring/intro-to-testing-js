@@ -16,3 +16,10 @@ let isFive = function(input){
         return false;
     }
 }
+let isEven = function(input){
+    if (typeof input === "boolean" && input === "banana" || input === undefined) {
+        return false;
+    } else  {
+
+    }
+}
