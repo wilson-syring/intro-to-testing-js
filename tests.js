@@ -57,3 +57,19 @@ describe(
         });
 
     });
+//unit test for isFive function
+describe(
+    'isFive', function() {
+        it('should be a defined function', function () {
+            expect(typeof isFive).toBe('function');
+        });
+        it('should return a boolean for every input', function () {
+            expect(typeof isFive()).toBe("boolean")
+        });
+        it('should return the boolean true when passed the number 5',function(){
+            expect(typeof isFive(5)).toBe("boolean");
+        });
+        it('should return a boolean when when passed the string "5" ',function(){
+            expect(typeof isFive("5")).toBe("boolean");
+        });
+    });

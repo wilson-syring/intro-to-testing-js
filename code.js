@@ -9,3 +9,10 @@ let sayHello = function(input) {
         return "Hello, " + input + "!";
     }
 }
+let isFive = function(input){
+    if (typeof input == 5){
+        return true;
+    }else {
+        return false;
+    }
+}
